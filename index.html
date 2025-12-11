@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokédex</title>
+    <link rel="shortcut icon" href="pokebola.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="pokedex">
+        <h1>Pokédex</h1>
+        <div class="search-box">
+            <input type="text" id="pokeInput" placeholder="Nome ou número">
+            <button onclick="searchPokemon()">buscar</button>
+        </div>
+        <div class="card" id="card">
+            <img alt="pokemon" id="pokeImg">
+            <h2 id="pokeName">---</h2>
+            <p id="pokeId">ID: ---</p>
+            <div class="types" id="pokeTypes"></div>
+            <p id="pokeDesc">descrição carregando...</p>
+        </div>
+        <div class="buttons">
+            <button onclick="prevPokemon()">◀ Anterior</button>
+            <button onclick="nextPokemon()">Próximo ▶</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
